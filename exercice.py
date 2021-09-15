@@ -3,10 +3,25 @@
 
 
 def is_even_len(string: str) -> bool:
+    string = input()
+    if len(string) % 2 == 0:
+        state = 'pair'
+        print(f"Le nombre de caractères dans la chaîne {string}  est {state}.")
+    else:
+        state = 'impair'
+        print(f"Le nombre de caractères dans la chaîne {string}  est {state}.")
     return False
 
+# Une autre manière de faire?
+
+#    if len(string) % 2 == 0:
+ #       return True
+  #  else:
+   #     return False
 
 def remove_third_char(string: str) -> str:
+    string = input()
+    print(string[0:2],string[3:len(string)])
     return ""
 
 
